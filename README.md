@@ -1378,3 +1378,17 @@ console.log(2)
     Executable Node.js scripts using shebang directive and chmod permissions for direct script execution without node
     command prefix.
 </summary>
+
+
+## CJS to MJS (icon: UnfoldVertical)
+
+### `__dirname`
+
+```jsx
+import {fileURLToPath} from 'url'
+import {dirname} from 'path'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+```
+
+---
